@@ -1,0 +1,12 @@
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 14px;
+    background-color: rgb(60, 220, 54);
+    margin-left: 10px;
+    transform: rotate(-45deg);
+    color: black;
+}

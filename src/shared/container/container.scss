@@ -1,0 +1,28 @@
+@import "../../style-config/variable.scss";
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 100px 0;
+    &.dark {
+        background-color: $black;
+    }
+    &.light {
+        background-color: $black-light;
+    }
+    .content {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        position: relative;
+        .title {
+            width: 100%;
+            max-width: 500px;
+            color: $white;
+            text-align: center;
+            font-size: 48px;
+        }
+    }
+}

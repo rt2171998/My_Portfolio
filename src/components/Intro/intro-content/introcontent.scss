@@ -1,0 +1,56 @@
+@import "../../../style-config//mixins.scss";
+@import "../../../style-config//variable.scss";
+.intro-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    .layout {
+        display: flex;
+        gap: 50px;
+        .left-col {
+            width: 45%;
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                color: $white;
+                .small-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .text {
+                        @include typography(42px, 500, 32px);
+                    }
+                }
+                .big-text {
+                    @include typography(62px, 600, 72px);
+                }
+            }
+            p {
+                @include typography(22px, 400, 30px);
+                color: $white;
+                margin-top: 10px;
+            }
+            .cta {
+                margin-top: 10px;
+            }
+        }
+        .right-col {
+            width: 55%;
+            display: flex;
+            //align-items: flex-start;
+            position: relative;
+            .dev-img {
+                width: 100%;
+                height: 80%;
+                margin-bottom: 50px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out;
+                border-radius: 10px;
+                &:hover {
+                    transform: translate(0, -5px) scale(1.05);
+                }
+            }
+        }
+    }
+}

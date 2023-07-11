@@ -1,0 +1,26 @@
+.contact-info-box {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    width: 30%;
+    background-color: rgb(99, 96, 96);
+    border-radius: 6px;
+    height: 300px;
+    .contact-options {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-left: 0px;
+        span {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        a {
+            margin-left: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}
